@@ -1,0 +1,11 @@
+public enum MessageType {
+    REQUEST_NAME_USER,
+    TEXT_MESSAGE,
+    NAME_ACCEPTED,
+    USER_NAME,
+    NAME_USER,
+    USER_ADDED,
+    DISABLE_USER,
+    REMOVED_USER,
+    USER_TEXT_MESSAGE;
+}
