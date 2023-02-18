@@ -3,11 +3,18 @@
 <p align="center">
 
 <img src="https://img.shields.io/badge/made-Madmaxim22-blue">
-<img src="https://img.shields.io/badge/JDK-18-red">
-<img src="https://img.shields.io/badge/JDK-18-red">
+<img src="https://img.shields.io/badge/JDK-18-blue">
+<img src="https://img.shields.io/github/stars/Madmaxim22/MultiChat?color=yellow">
+<img src="https://img.shields.io/github/forks/Madmaxim22/MultiChat?color=blue">
+<img src="https://img.shields.io/github/watchers/Madmaxim22/MultiChat?color=blue">
+<img src="https://img.shields.io/github/downloads/Madmaxim22/MultiChat/total?color=blue">
 </p>
 
 <h2 align="center"><b>Описание проекта</b></h2>
+
+Приложение для обмена сообщениями, созданая на Java. 
+Сетевой чат позволяет пользователям в сети обмениваться сообщениями не выходя из дома используя лишь консоль.
+
 Проект сетевого чата реализован на MVC архитектуре.
 <details>
 <summary> MVC </summary>
@@ -15,6 +22,8 @@
 ``Model-View-Controller(MVC)`` - это шаблон, используемый в программной инженерии для отделения логики приложения от
 пользовательского интерфеса. То есть писать независимые блоки кода, которые можно менчять как угодно, не затрагивая
 другие.
+
+![MVC](/resources/mvc.webp)  
 
 Архитектура шаблона MVC состоит из трех уровней:
 
@@ -48,10 +57,6 @@
 
 </details>
 
-- Что делает проект
-- Почему использовали технологии
-- Проблемы с которыми столкнулись
-
 <h2 align="center"><b>Как установить и запустить проект</b></h2>
 
 Прежде чем запустить сетевой чат вам нужно настроить Серверную и Клиентскую часть приложения.  
@@ -66,7 +71,7 @@
 По умолчанию при запуске сервера в домашнем каталоге создается файл server.properties.  
 В нем указывается номер порта сервера (8080), на котором он будет ожидать подключения 
 
-![текст](/SettingServer.gif)  
+![SettingServer](/resources/SettingServer.gif)  
 </details>  
 
 ---  
@@ -77,7 +82,7 @@
 По умолчанию при запуске клиента в домашнем каталоге создается файл client.properties.  
 В нем указывается сокет сервера (127.0.0.1 8080), к которому будет подключаться клиент.
 
-![текст](/SettingClient.gif)  
+![SettingClient](/resources/SettingClient.gif)  
 </details> 
 
 ---  
@@ -88,7 +93,7 @@
 Переходим в директорию где у вас лежит jar архив(Server-1.0-SNAPSHOT.jar).  
 И с помощью команды java -jar Server-1.0-SNAPSHOT.jar запускаем Сервер.
 
-![текст](/StartServer.gif)  
+![StartServer](/resources/StartServer.gif)  
 </details> 
 
 ---  
@@ -99,7 +104,7 @@
 Переходим в директорию где у вас лежит jar архив(Client-1.0-SNAPSHOT.jar).  
 И с помощью команды java -jar Client-1.0-SNAPSHOT.jar запускаем Клиент.
 
-![текст](/StartClient.gif)  
+![StartClient](/resources/StartClient.gif)  
 </details> 
 
 ---  
@@ -112,7 +117,7 @@
 Для отправки личных сообщений нужно в начале предложения ввести имя пользователя которому вы хотите отправить сообщение.
 Для выхода из приложения нужно ввести команду **/exit**. Для отключение сервера нужно ввести команду **/stop**.
 
-![текст](Chat.gif)  
+![Chat](resources/Chat.gif)  
 </details> 
 
 ---  
