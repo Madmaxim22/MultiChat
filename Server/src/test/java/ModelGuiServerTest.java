@@ -10,6 +10,7 @@ class ModelGuiServerTest {
 
     ModelGuiServer modelGuiServer;
     Connection connection;
+
     @BeforeEach
     public void newModel() {
         modelGuiServer = new ModelGuiServer();

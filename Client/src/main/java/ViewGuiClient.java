@@ -24,7 +24,7 @@ public class ViewGuiClient {
 
     // Вывод сообщений в консоль
     void usersMessage(String text) {
-        System.out.println(text);
+        System.out.print(text);
         logger.info(text);
     }
 
@@ -43,17 +43,19 @@ public class ViewGuiClient {
 
     //метод обновляющий список имен подключившихся пользователей
     protected void refreshListUsers(Set<String> listUsers) {
+        int number = 0;
         if (listUsers.size() == 1) {
             System.out.println("Вы единственный в пользователь в чате.");
         } else {
             System.out.println("Пользователи в сети: ");
             for (String user : listUsers) {
-                System.out.println(user);
+                System.out.print("{ " + user + " }");
+                number++;
+                if (number % 10 == 0) {
+                    System.out.println("->");
+                }
             }
+            System.out.println();
         }
-    }
-
-    protected void closeBuf() throws IOException {
-        buf.close();
     }
 }

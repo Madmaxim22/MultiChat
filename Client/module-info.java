@@ -1,3 +1,3 @@
-module Connection {
-    exports src.main.java.org.example;
+module Client {
+    requires Connection;
 }

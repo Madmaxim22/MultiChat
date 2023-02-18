@@ -3,11 +3,11 @@ import java.util.Set;
 
 public class Message implements Serializable {
 
-    private MessageType messageType; // тип сообщения
-    private String textMessage; // текст сообщения
+    private final MessageType messageType; // тип сообщения
+    private final String textMessage; // текст сообщения
 
-    private String userName; // имя пользователя
-    private Set<String> listUser; // множество имен уже подключившихся пользователей
+    private final String userName; // имя пользователя
+    private final Set<String> listUser; // множество имен уже подключившихся пользователей
 
     public Message(MessageType messageType, String userName, String textMessage) {
         this.messageType = messageType;
